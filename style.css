@@ -1,0 +1,122 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #36393f; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.login-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background-color: #2f3136;
+    border-radius: 8px;
+    padding: 40px 30px;
+    color: white;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 1s ease-in-out;
+    transition: all 0.3s ease;
+}
+
+.login-wrapper:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.35);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 90px;
+}
+
+h2 {
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 22px;
+}
+
+p {
+    font-size: 14px;
+    color: #b9bbbe;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+    color: #dcddde;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4f545c;
+    color: white;
+    font-size: 14px;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+input:focus {
+    outline: none;
+    background-color: #5d6167;
+    border-color: #7289da;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #7289da;
+    color: white;
+    font-weight: 600;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #5b6eae;
+}
+
+.links {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 13px;
+}
+
+.links a {
+    color: #7289da;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer {
+    margin-top: 30px;
+    font-size: 12px;
+    text-align: center;
+    color: #8e9297;
+}
